@@ -1,0 +1,35 @@
+<!---デジタル時計-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>時計</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="clock"></div>
+    <script>
+      function updateTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        var timeString =
+          addZeroPadding(hours) +
+          ":" +
+          addZeroPadding(minutes) +
+          ":" +
+          addZeroPadding(seconds);
+        document.getElementById("clock").innerHTML = timeString;
+      }
+      function addZeroPadding(num) {
+        if (num < 10) {
+          return "0" + num;
+        } else {
+          return num;
+        }
+      }
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
