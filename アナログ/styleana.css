@@ -1,3 +1,15 @@
+.clockall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#analogclock{
+  display: none;
+}
+#degitalclock{
+  display: block;
+}
 .analog-clock {
   width: 200px;
   height: 200px;
