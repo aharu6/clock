@@ -1,35 +1,21 @@
-<!---デジタル時計-->
+<!---アナログ時計--->
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>時計</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charaset="UTF-8" />
+    <title>analog clock</title>
+    <link rel="stylesheet" href="styleana.css" type="text/css" />
   </head>
   <body>
-    <div id="clock"></div>
-    <script>
-      function updateTime() {
-        var now = new Date();
-        var hours = now.getHours();
-        var minutes = now.getMinutes();
-        var seconds = now.getSeconds();
-        var timeString =
-          addZeroPadding(hours) +
-          ":" +
-          addZeroPadding(minutes) +
-          ":" +
-          addZeroPadding(seconds);
-        document.getElementById("clock").innerHTML = timeString;
-      }
-      function addZeroPadding(num) {
-        if (num < 10) {
-          return "0" + num;
-        } else {
-          return num;
-        }
-      }
-      setInterval(updateTime, 1000);
-    </script>
+    <div class="clockall">
+      <div id="analogclock" class="analog-clock">
+        <div class="hour-hand"></div>
+        <div class="minutes-hand"></div>
+        <div class="seconds-hand"></div>
+        <div class="clockface"></div>
+      </div>
+      <div id="degitalclock" class="degital-clock"></div>
+    </div>
+    <script src="clock.js"></script>
   </body>
 </html>
