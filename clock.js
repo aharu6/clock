@@ -19,11 +19,11 @@ function analogclock() {
 }
 //時計本体　デジタル
 function degitalclock() {
-  var now = new Date();
-  var hours = now.getHours();
-  var minutes = now.getMinutes();
-  var seconds = now.getSeconds();
-  var timeString =
+  let now = new Date();
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  let seconds = now.getSeconds();
+  let timeString =
     addZeroPadding(hours) +
     ":" +
     addZeroPadding(minutes) +
@@ -31,7 +31,13 @@ function degitalclock() {
     addZeroPadding(seconds);
   document.getElementById("degitalclock").innerHTML = timeString;
 }
-
+function addZeroPadding(num) {
+  if (num < 10) {
+    return "0" + num;
+  } else {
+    return num;
+  }
+}
 //アナログ表示
 function showananalogclock() {
   document.getElementById("analogclock").style.display = "block";
@@ -61,11 +67,9 @@ function updatetime() {
   let minutes = now.getMinutes();
 
   if (minutes % 10 === 0) {
-    showananalogclock();
-    analogclock();
+    setInterval(analogclock, 1000);
   } else {
-    
-    degitalclock();
+    setInterval(degitalclock, 1000);
   }
 }
 setInterval(updatetime, 1000);

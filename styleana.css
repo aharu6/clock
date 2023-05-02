@@ -1,13 +1,4 @@
-.clockall {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-#analogclock{
-  display: none;
-}
-#degitalclock{
+#degitalclock {
   display: block;
 }
 .analog-clock {
@@ -17,7 +8,11 @@
   border-radius: 50%;
   position: relative;
 }
-
+.degital-clock {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 50px;
+}
 .hour-hand,
 .minutes-hand,
 .seconds-hand {
