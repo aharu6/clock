@@ -62,9 +62,18 @@ function updatetime() {
   let now = new Date();
   let minutes = now.getMinutes();
 
-  if (Math.floor(minutes/10) === 0||2||4||6) {
+  if (
+    Math.floor(minutes / 10) === 1 ||
+    Math.floor(minutes / 10) === 3 ||
+    Math.floor(minutes / 10) === 5
+  ) {
     setInterval(showananalogclock, 1000);
-  } else if(Math.floor(minutes/10)== 1||3||5) {
+  } else if (
+    Math.floor(minutes / 10) == 0 ||
+    Math.floor(minutes / 10) === 2 ||
+    Math.floor(minutes / 10) === 4 ||
+    Math.floor(minutes / 10) === 6
+  ) {
     setInterval(showdegitalclock, 1000);
   }
 }
