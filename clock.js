@@ -57,14 +57,14 @@ function showdegitalclock() {
   document.getElementById("secondshand").classList.add("none");
   document.getElementById("degitalclock").classList.add("show");
 }
-//各クラス取得中のリアルタイムでの時間表示　デジタルとアナログそれぞれ
+//10分ごとの表示切り替え　デジタルとアナログそれぞれ
 function updatetime() {
   let now = new Date();
   let minutes = now.getMinutes();
 
-  if (minutes % 10 === 0) {
+  if (Math.floor(minutes/10) === 0||2||4||6) {
     setInterval(showananalogclock, 1000);
-  } else {
+  } else if(Math.floor(minutes/10)== 1||3||5) {
     setInterval(showdegitalclock, 1000);
   }
 }
