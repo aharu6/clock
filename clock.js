@@ -63,16 +63,16 @@ function updatetime() {
   let minutes = now.getMinutes();
 
   if (
-    Math.floor(minutes / 10) === 1 ||
-    Math.floor(minutes / 10) === 3 ||
-    Math.floor(minutes / 10) === 5
-  ) {
-    setInterval(showananalogclock, 1000);
-  } else if (
-    Math.floor(minutes / 10) == 0 ||
+    Math.floor(minutes / 10) === 0 ||
     Math.floor(minutes / 10) === 2 ||
     Math.floor(minutes / 10) === 4 ||
     Math.floor(minutes / 10) === 6
+  ) {
+    setInterval(showananalogclock, 1000);
+  } else if (
+    Math.floor(minutes / 10) === 1 ||
+    Math.floor(minutes / 10) === 3 ||
+    Math.floor(minutes / 10) === 5
   ) {
     setInterval(showdegitalclock, 1000);
   }
