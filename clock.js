@@ -40,26 +40,28 @@ function addZeroPadding(num) {
 }
 //アナログ表示
 function showananalogclock() {
+  setInterval(analogclock, 1000);
   document.getElementById("analogclock").style.display = "block";
-  document.getElementById("degitalclock").style.display = "none";
-
-  analogclock.classlist.add("show");
-  analogclock.classlist.remove("hide");
-  hourhand.classlist.add("show");
-  hourhand.classList.remove("hide");
-  minuteshand.classList.add("show");
-  minuteshand.classList.remove("hide");
-  secondshand.classList.add("show");
-  secondshand.classList.remove("hide");
-  clockface.classList.add("show");
-  clockface.classListr.remove("hide");
+  document.getElementById("hourhand").style.display = "block";
+  document.getElementById("minuteshand").style.display = "block";
+  document.getElementById("secondshand").style.display = "block";
+  document.getElementById("clockface").style.display = "block";
+  const degitalnone = document.getElementById("degitalclock");
+  degitalnone.classList.add("degitalclocknone");
 }
 //デジタル表示
 function showdegitalclock() {
-  document.getElementById("analogclock").style.display = "none";
+  setInterval(degitalclock, 1000);
+  const anaclock = document.getElementById("analogclock");
+  anaclock.classList.add("analogclocknone");
+  const hrid = document.getElementById("hourhand");
+  hrid.classList.add("hourhandnone");
+  const mnid = document.getElementById("minuteshand");
+  mnid.classList.add("minuteshandnone");
+  const seid = document.getElementById("secondshand");
+  seid.classList.add("secondshandnone");
   document.getElementById("degitalclock").style.display = "block";
-  degitalclock.classlist.add("show");
-  degitalclock.classlist.remove("hide");
+  
 }
 //各クラス取得中のリアルタイムでの時間表示　デジタルとアナログそれぞれ
 function updatetime() {
@@ -67,9 +69,9 @@ function updatetime() {
   let minutes = now.getMinutes();
 
   if (minutes % 10 === 0) {
-    setInterval(analogclock, 1000);
+    setInterval(showananalogclock, 1000);
   } else {
-    setInterval(degitalclock, 1000);
+    setInterval(showdegitalclock, 1000);
   }
 }
 setInterval(updatetime, 1000);

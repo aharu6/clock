@@ -21,6 +21,15 @@
   left: 50%;
   bottom: 50%;
 }
+.analogclocknone,
+.hourhandnone,
+.minuteshandnone,
+.secondshandnone{
+  display: none;
+}
+.degitalclocknone{
+  display: none;
+}
 .hour-hand {
   width: 4px;
   height: 50px;
