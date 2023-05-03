@@ -21,13 +21,23 @@
   left: 50%;
   bottom: 50%;
 }
-.analogclocknone,
-.hourhandnone,
-.minuteshandnone,
-.secondshandnone{
+.analog-clock.show,
+.hour-hand.show,
+.minutes-hand.show,
+.seconds-hand.show{
+  display: show;
+}
+
+.analog-clock.none,
+.hour-hand.none,
+.minutes-hand.none,
+.seconds-hand.none{
   display: none;
 }
-.degitalclocknone{
+.degital-clock.show{
+  display: show;
+}
+.degital-clock.none{
   display: none;
 }
 .hour-hand {

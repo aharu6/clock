@@ -41,27 +41,21 @@ function addZeroPadding(num) {
 //アナログ表示
 function showananalogclock() {
   setInterval(analogclock, 1000);
-  document.getElementById("analogclock").style.display = "block";
-  document.getElementById("hourhand").style.display = "block";
-  document.getElementById("minuteshand").style.display = "block";
-  document.getElementById("secondshand").style.display = "block";
-  document.getElementById("clockface").style.display = "block";
-  const degitalnone = document.getElementById("degitalclock");
-  degitalnone.classList.add("degitalclocknone");
+  document.getElementById("analogclock").classList.add("show");
+  document.getElementById("hourhand").classList.add("show");
+  document.getElementById("minuteshand").classList.add("show");
+  document.getElementById("secondshand").classList.add("show");
+  document.getElementById("clockface").classList.add("show");
+  document.getElementById("degitalclock").classList.add("none");
 }
 //デジタル表示
 function showdegitalclock() {
   setInterval(degitalclock, 1000);
-  const anaclock = document.getElementById("analogclock");
-  anaclock.classList.add("analogclocknone");
-  const hrid = document.getElementById("hourhand");
-  hrid.classList.add("hourhandnone");
-  const mnid = document.getElementById("minuteshand");
-  mnid.classList.add("minuteshandnone");
-  const seid = document.getElementById("secondshand");
-  seid.classList.add("secondshandnone");
-  document.getElementById("degitalclock").style.display = "block";
-  
+  document.getElementById("analogclock").classList.add("none");
+  document.getElementById("hourhand").classList.add("none");
+  document.getElementById("minuteshand").classList.add("none");
+  document.getElementById("secondshand").classList.add("none");
+  document.getElementById("degitalclock").classList.add("show");
 }
 //各クラス取得中のリアルタイムでの時間表示　デジタルとアナログそれぞれ
 function updatetime() {
