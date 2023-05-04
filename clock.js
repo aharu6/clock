@@ -46,6 +46,7 @@ function showananalogclock() {
   document.getElementById("minuteshand").classList.add("show");
   document.getElementById("secondshand").classList.add("show");
   document.getElementById("clockface").classList.add("show");
+  document.getElementById("clockface").classList.add("show");
   document.getElementById("degitalclock").classList.add("none");
 }
 //デジタル表示
@@ -55,6 +56,7 @@ function showdegitalclock() {
   document.getElementById("hourhand").classList.add("none");
   document.getElementById("minuteshand").classList.add("none");
   document.getElementById("secondshand").classList.add("none");
+  document.getElementById("clockface").classList.add("none");
   document.getElementById("degitalclock").classList.add("show");
 }
 //10分ごとの表示切り替え　デジタルとアナログそれぞれ

@@ -24,14 +24,16 @@
 .analog-clock.show,
 .hour-hand.show,
 .minutes-hand.show,
-.seconds-hand.show{
+.seconds-hand.show,
+.clock-face.show{
   display: show;
 }
 
 .analog-clock.none,
 .hour-hand.none,
 .minutes-hand.none,
-.seconds-hand.none{
+.seconds-hand.none,
+.clock-face.none{
   display: none;
 }
 .degital-clock.show{

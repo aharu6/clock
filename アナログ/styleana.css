@@ -5,7 +5,13 @@
   border-radius: 50%;
   position: relative;
 }
-
+img{
+  right: 19%;
+  bottom: 34.11%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
 .hour-hand,
 .minutes-hand,
 .seconds-hand {
@@ -40,4 +46,3 @@
   background-color: #000;
   border-radius: 50%;
 }
-
