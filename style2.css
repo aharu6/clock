@@ -1,39 +1,45 @@
 /*ANALOG*/
-.analog-clock {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #00000000;
-  border-radius: 50%;
+div.background{
   position: relative;
+}
+.analog-clock {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #090101;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 34%;
 }
 
 img.body{
-  right: 19%;
-  bottom: 34.11%;
-  width: 300px;
-  height: 300px;
-  position: relative;
+  width: 800px;
+  height:800px;
+  position: absolute;
+  top: -195px;
+  left: -130px;
 }
 img.hour{
   position: absolute;
   transform-origin: center bottom;
-  bottom: -3px;
-  right: -25px;
-  width:  55px;
-  height: 55px;
+  bottom: -4px;
+  right: -93px;
+  width:  190px;
+  height: 190px;
 }
 img.minutes{
   position: absolute;
   transform-origin: center bottom;
-  bottom: -66px;
-  right: -80px;
-  width:  75px;
-  height: 75px
+  bottom: -3px;
+  right: -125px;
+  width:  250px;
+  height: 250px
 }
 
 .hour-hand,
 .minutes-hand,
-.seconds-hand {
+.seconds-hand,
+.clock-face {
   position: absolute;
   transform-origin: center bottom;
   left: 50%;
@@ -58,17 +64,17 @@ img.minutes{
 
 .hour-hand {
   width: 4px;
-  height: 50px;
+  height: 140px;
   background-color: #00000000;
 }
 .minutes-hand {
   width: 2px;
-  height: 70px;
-  background-color: #00000000;
+  height: 230px;
+  background-color: #1a020200;
 }
 .seconds-hand {
   width: 1px;
-  height: 80px;
+  height: 250px;
   background-color: #f00;
 }
 
@@ -85,9 +91,12 @@ img.minutes{
 
 /*degital*/
 .degital-clock {
-  font-size: 48px;
+  font-size: 120px;
   text-align: center;
   margin-top: 50px;
+  top: 25%;
+  left: 30%;
+  font-family: "Bodoni 72 Smallcaps Book",sans-serif;
 }
 .degital-clock.show{
   display: show;
