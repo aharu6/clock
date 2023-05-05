@@ -70,14 +70,12 @@ function updatetime() {
     Math.floor(minutes / 10) === 4 ||
     Math.floor(minutes / 10) === 6
   ) {
-    clearInterval();
     setInterval(showananalogclock, 1000);
   } else if (
     Math.floor(minutes / 10) === 1 ||
     Math.floor(minutes / 10) === 3 ||
     Math.floor(minutes / 10) === 5
   ) {
-    clearInterval();
     setInterval(showdegitalclock, 1000);
   }
 }
