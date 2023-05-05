@@ -1,18 +1,36 @@
-#degitalclock {
-  display: block;
-}
+/*ANALOG*/
 .analog-clock {
   width: 200px;
   height: 200px;
-  border: 1px solid #000;
+  border: 1px solid #00000000;
   border-radius: 50%;
   position: relative;
 }
-.degital-clock {
-  font-size: 48px;
-  text-align: center;
-  margin-top: 50px;
+
+img.body{
+  right: 19%;
+  bottom: 34.11%;
+  width: 300px;
+  height: 300px;
+  position: relative;
 }
+img.hour{
+  position: absolute;
+  transform-origin: center bottom;
+  bottom: -3px;
+  right: -21px;
+  width:  50px;
+  height: 50px;
+}
+img.minutes{
+  position: absolute;
+  transform-origin: center bottom;
+  bottom: -3px;
+  right: 1.2px;
+  width: 2px;
+  height: 73px;
+}
+
 .hour-hand,
 .minutes-hand,
 .seconds-hand {
@@ -36,21 +54,17 @@
 .clock-face.none{
   display: none;
 }
-.degital-clock.show{
-  display: show;
-}
-.degital-clock.none{
-  display: none;
-}
+
+
 .hour-hand {
   width: 4px;
   height: 50px;
-  background-color: #000;
+  background-color: #00000000;
 }
 .minutes-hand {
   width: 2px;
   height: 70px;
-  background-color: #000;
+  background-color: #00000000;
 }
 .seconds-hand {
   width: 1px;
@@ -58,7 +72,7 @@
   background-color: #f00;
 }
 
-.clockface {
+.clock-face {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -67,4 +81,17 @@
   height: 8px;
   background-color: #000;
   border-radius: 50%;
+}
+
+/*degital*/
+.degital-clock {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 50px;
+}
+.degital-clock.show{
+  display: show;
+}
+.degital-clock.none{
+  display: none;
 }

@@ -1,17 +1,34 @@
 .analog-clock {
   width: 200px;
   height: 200px;
-  border: 1px solid #000;
+  border: 1px solid #00000000;
   border-radius: 50%;
   position: relative;
 }
-img{
+img.body{
   right: 19%;
   bottom: 34.11%;
   width: 300px;
   height: 300px;
   position: relative;
 }
+img.hour{
+  position: absolute;
+  transform-origin: center bottom;
+  bottom: -3px;
+  right: -21px;
+  width:  50px;
+  height: 50px;
+}
+img.minutes{
+  position: absolute;
+  transform-origin: center bottom;
+  bottom: -3px;
+  right: 1.2px;
+  width: 2px;
+  height: 73px;
+}
+
 .hour-hand,
 .minutes-hand,
 .seconds-hand {
@@ -23,12 +40,12 @@ img{
 .hour-hand {
   width: 4px;
   height: 50px;
-  background-color: #000;
+  background-color: #00000000;
 }
 .minutes-hand {
   width: 2px;
   height: 70px;
-  background-color: #000;
+  background-color: #00000000;
 }
 .seconds-hand {
   width: 1px;
