@@ -1,0 +1,97 @@
+/*ANALOG*/
+.analog-clock {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #00000000;
+  border-radius: 50%;
+  position: relative;
+}
+
+img.body{
+  right: 19%;
+  bottom: 34.11%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+img.hour{
+  position: absolute;
+  transform-origin: center bottom;
+  bottom: -3px;
+  right: -25px;
+  width:  55px;
+  height: 55px;
+}
+img.minutes{
+  position: absolute;
+  transform-origin: center bottom;
+  bottom: -66px;
+  right: -80px;
+  width:  75px;
+  height: 75px
+}
+
+.hour-hand,
+.minutes-hand,
+.seconds-hand {
+  position: absolute;
+  transform-origin: center bottom;
+  left: 50%;
+  bottom: 50%;
+}
+.analog-clock.show,
+.hour-hand.show,
+.minutes-hand.show,
+.seconds-hand.show,
+.clock-face.show{
+  display: show;
+}
+
+.analog-clock.none,
+.hour-hand.none,
+.minutes-hand.none,
+.seconds-hand.none,
+.clock-face.none{
+  display: none;
+}
+
+
+.hour-hand {
+  width: 4px;
+  height: 50px;
+  background-color: #00000000;
+}
+.minutes-hand {
+  width: 2px;
+  height: 70px;
+  background-color: #00000000;
+}
+.seconds-hand {
+  width: 1px;
+  height: 80px;
+  background-color: #f00;
+}
+
+.clock-face {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/*degital*/
+.degital-clock {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 50px;
+}
+.degital-clock.show{
+  display: show;
+}
+.degital-clock.none{
+  display: none;
+}

@@ -7,22 +7,22 @@
   position: relative;
 }
 
-img.body{
+img.body {
   right: 19%;
   bottom: 34.11%;
   width: 300px;
   height: 300px;
   position: relative;
 }
-img.hour{
+img.hour {
   position: absolute;
   transform-origin: center bottom;
   bottom: -3px;
   right: -21px;
-  width:  50px;
+  width: 50px;
   height: 50px;
 }
-img.minutes{
+img.minutes {
   position: absolute;
   transform-origin: center bottom;
   bottom: -3px;
@@ -43,7 +43,7 @@ img.minutes{
 .hour-hand.show,
 .minutes-hand.show,
 .seconds-hand.show,
-.clock-face.show{
+.clock-face.show {
   display: show;
 }
 
@@ -51,10 +51,9 @@ img.minutes{
 .hour-hand.none,
 .minutes-hand.none,
 .seconds-hand.none,
-.clock-face.none{
+.clock-face.none {
   display: none;
 }
-
 
 .hour-hand {
   width: 4px;
@@ -89,9 +88,9 @@ img.minutes{
   text-align: center;
   margin-top: 50px;
 }
-.degital-clock.show{
+.degital-clock.show {
   display: show;
 }
-.degital-clock.none{
+.degital-clock.none {
   display: none;
 }
