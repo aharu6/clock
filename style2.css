@@ -1,5 +1,5 @@
 /*ANALOG*/
-div.background{
+div.background {
   position: relative;
 }
 .analog-clock {
@@ -12,31 +12,30 @@ div.background{
   left: 34%;
 }
 
-img.body{
+img.body {
   width: 510px;
-  height:520px;
+  height: 520px;
   position: absolute;
   top: -8px;
   left: -5px;
 }
-img.hour{
+img.hour {
   position: absolute;
   transform-origin: center bottom;
   bottom: -25px;
   right: -100px;
-  width:  200px;
+  width: 200px;
   height: 190px;
 }
-img.minutes{
+img.minutes {
   position: absolute;
   transform-origin: center bottom;
   bottom: -50px;
   right: -145px;
-  width:  300px;
-  height: 290px
+  width: 300px;
+  height: 290px;
 }
-img.clockface{
-
+img.clockface {
 }
 
 .hour-hand,
@@ -52,7 +51,7 @@ img.clockface{
 .hour-hand.show,
 .minutes-hand.show,
 .seconds-hand.show,
-.clock-face.show{
+.clock-face.show {
   display: show;
 }
 
@@ -60,20 +59,19 @@ img.clockface{
 .hour-hand.none,
 .minutes-hand.none,
 .seconds-hand.none,
-.clock-face.none{
+.clock-face.none {
   display: none;
 }
-
 
 .hour-hand {
   width: 4px;
   height: 160px;
-  background-color: #000000;
+  background-color: #00000000;
 }
 .minutes-hand {
   width: 2px;
   height: 280px;
-  background-color: #1a0202;
+  background-color: #1a020200;
 }
 .seconds-hand {
   width: 1px;
@@ -93,8 +91,8 @@ img.clockface{
 }
 
 /*degital*/
-.background{
-  color: #B46060;
+.background {
+  color: #b46060;
 }
 .degital-clock {
   font-size: 120px;
@@ -102,11 +100,11 @@ img.clockface{
   margin-top: 50px;
   top: 25%;
   left: 30%;
-  font-family: "Herculanum",sans-serif;
+  font-family: "Herculanum", sans-serif;
 }
-.degital-clock.show{
+.degital-clock.show {
   display: show;
 }
-.degital-clock.none{
+.degital-clock.none {
   display: none;
 }
