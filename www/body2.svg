@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 668 654">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_名称未設定グラデーション_12);
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 15px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-5 {
+        stroke: #000;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #0b2447;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: 6px;
+      }
+    </style>
+    <radialGradient id="_名称未設定グラデーション_12" data-name="名称未設定グラデーション 12" cx="334" cy="327" fx="334" fy="327" r="330.52" gradientUnits="userSpaceOnUse">
+      <stop offset=".7" stop-color="#fff"/>
+      <stop offset=".76" stop-color="#f3f9fc"/>
+      <stop offset=".86" stop-color="#d5ecf4"/>
+      <stop offset="1" stop-color="#a5d7e8"/>
+      <stop offset="1" stop-color="#a9d8e9"/>
+      <stop offset="1" stop-color="#c3e4ef"/>
+      <stop offset="1" stop-color="#d9eef5"/>
+      <stop offset="1" stop-color="#eaf5f9"/>
+      <stop offset="1" stop-color="#f6fbfc"/>
+      <stop offset="1" stop-color="#fdfefe"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <path class="cls-1" d="m451.3,633.79c130.81-48.32,222.31-183.84,216.44-320.55-5.87-136.71-108.68-264.24-243.17-301.64C290.07-25.81,134.11,29.74,55.65,143c-78.46,113.26-73.45,275.62,11.84,384.04,85.29,108.42,245.57,157.81,383.8,106.74Z"/>
+    <path class="cls-2" d="m334,544.2v109.8"/>
+    <path class="cls-2" d="m334,0v109.8"/>
+    <path class="cls-3" d="m109.81,327H.01"/>
+    <path class="cls-2" d="m668,327h-109.8"/>
+    <path class="cls-5" d="m499.15,611.16c-15.67-27.24-31.34-54.47-47.01-81.71"/>
+    <path class="cls-5" d="m216.88,124.31c-15.67-27.24-31.34-54.47-47.01-81.71"/>
+    <path class="cls-5" d="m619.66,491.8c-27.32-15.52-54.64-31.04-81.97-46.56"/>
+    <path class="cls-5" d="m448.7,124.28c15.71-27.21,31.43-54.42,47.14-81.64"/>
+    <path class="cls-5" d="m171.92,611.12c15.71-27.21,31.43-54.42,47.14-81.64"/>
+    <path class="cls-5" d="m537.86,206.31c27.21-15.71,54.42-31.43,81.63-47.14"/>
+    <path class="cls-4" d="m44.78,496.38c27.21-15.71,54.42-31.43,81.63-47.14"/>
+    <path class="cls-5" d="m126.58,205.94c-27.32-15.52-54.64-31.04-81.97-46.56"/>
+  </g>
+</svg>
