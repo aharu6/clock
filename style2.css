@@ -5,7 +5,7 @@ div.background {
 .analog-clock {
   width: 500px;
   height: 500px;
-  border: 1px solid #030000;
+  border: 1px solid #03000000;
   border-radius: 50%;
   position: absolute;
   top: 20%;
@@ -36,6 +36,8 @@ img.minutes {
   height: 290px;
 }
 img.clockface {
+  position: absolute;
+  transform-origin: center bottom;
 }
 
 .hour-hand,
@@ -86,7 +88,7 @@ img.clockface {
   transform: translate(-50%, -50%);
   width: 8px;
   height: 8px;
-  background-color: #000;
+  background-color: #00000000;
   border-radius: 50%;
 }
 
